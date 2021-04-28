@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: rgb(0, 36, 104);
+        }
+        .container{
+            width: 40%;
+            height: 50vh;
+            margin: auto;
+            position: relative;
+            top:150px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+        .container img{
+            width: 100px;
+            height: 150px;
+            position: absolute;
+            top:25%;
+            right: 40%;
+        }
+        #lighton{
+            width:137px;
+            height: 157px;
+            position: absolute;
+            display: none;
+            z-index: 44;
+            right: 28%;
+        }
+        button{
+           position: absolute;
+            margin: auto;  top:70%; cursor: pointer;padding: 10px 30px;
+        font-size: 1.2rem;
+        border: none;
+        }
+        #btn{
+        right: 65%;
+        }
+        #btn:hover{
+            background: red;
+        }
+        #btn1{
+        right: 2%;
+        }
+        #btn1:hover{
+            background: rgb(0, 255, 64);
+        }
+        @media screen and (max-width:480px){
+            body{
+                background-color: aqua;
+            }
+            .container img{
+                right: 18%;
+            }
+            button{
+           top:80%; 
+            padding: 10px 20px;
+        font-size: 1rem;
+        }
+        #btn1{
+        left: 70%;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="./img/bulboFF.jpg" alt=''   id="lightoff">
+        <div></div>
+        <button id='btn' onclick="document.getElementById('lightoff').src='./img/bulb_PNG124.jpg'">Turn ON Light
+        </button>
+        <button id='btn1' onclick="document.getElementById('lightoff').src='./img/bulboFF.jpg'">Turn OFF Light
+        </button>
+    </div>
+</body>
+</html>
